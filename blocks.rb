@@ -36,3 +36,15 @@
 #    puts "exec the block"
 #end
 
+#5 exemplo de block:
+#def foo
+#    if block_given?
+#        #call the block
+#        yield
+#    else
+#        puts "Sem parametro do tipo bloco"
+#    end
+#end
+
+#foo
+#deu o puts sem parametro.. porque eu nao botei o block " foo {puts " Com parametro"}"
