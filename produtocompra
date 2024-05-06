@@ -1,0 +1,33 @@
+    @@contador = 0
+
+    def initialize (produto, preco)
+        @@contador += 1
+        @numero = @@contador
+        @nome = produto
+        @preco = preco
+    end
+
+    def nome
+        "#{@nome}" #Produto #{@numero}: #{@nome}"    
+    end
+
+    def preco
+        "R$ #{@preco}"
+    end
+end
+
+puts "\nDesejo comprar esse produto: "
+nome_produto1 = gets.chomp
+puts "\nQuanto é o valor desse produto?: "
+preco_produto1 = gets.chomp
+
+puts "\nDesejo comprar esse produto: "
+nome_produto2 = gets.chomp
+puts "\nQuanto é o valor desse produto?: "
+preco_produto2 = gets.chomp
+
+produto1 = Produto.new(nome_produto1, preco_produto1)
+produto2 = Produto.new(nome_produto2, preco_produto2)
+
+puts produto1.nome + " " + produto1.preco
+puts produto2.nome + " " + produto2.preco
